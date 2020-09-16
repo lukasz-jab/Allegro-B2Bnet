@@ -42,7 +42,7 @@ public class ApplicationManager {
         wd = null;
     }
 
-    public ArticleHelper getArticleHelper() {
+    public ArticleHelper article() {
         return articleHelper;
     }
 

@@ -13,7 +13,7 @@ public class ArticleData {
         return this;
     }
 
-    public BigDecimal getPriceToCalculations() {
+    public BigDecimal priceToCalc() {
         return priceToCalculations = new BigDecimal(price);
     }
 

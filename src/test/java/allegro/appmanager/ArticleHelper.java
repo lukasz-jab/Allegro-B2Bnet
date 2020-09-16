@@ -16,11 +16,11 @@ public class ArticleHelper {
         this.wd = wd;
     }
 
-    public void selectArticleColor(String color) {
+    public void selectColor(String color) {
         wd.findElement(By.xpath("//div[@class='opbox-listing-filters']//span[.='" + color + "']")).click();
     }
 
-    public void submitSearchBar() {
+    public void submitSearch() {
         wd.findElement(By.cssSelector("div[data-box-name='allegro.metrumHeader'] button[type=submit]")).click();
     }
 
@@ -29,7 +29,7 @@ public class ArticleHelper {
                 .sendKeys(article);
     }
 
-    public List<ArticleData> getArticlesList() {
+    public List<ArticleData> list() {
         List<WebElement> articles = new ArrayList<>();
         articles = wd.findElements(By.cssSelector("div#opbox-listing--base article"));
 
